@@ -1,0 +1,371 @@
+{
+  "intents": [
+    {
+      "name": "accesswebsite",
+      "samples": [
+        "open {webstielist}",
+        "look up {webstielist}"
+      ],
+      "slots": [
+        {
+          "name": "webstielist",
+          "type": "websitelist",
+          "samples": [
+            "go to{webstielist}",
+            "look up {webstielist}",
+            "go to google"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "AMAZON.ActivateAction<object@PlaybackMode>"
+    },
+    {
+      "name": "AMAZON.AddAction<object@MusicCreativeWork,targetCollection@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@CreativeWork>"
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@MusicCreativeWork,sourceCollection@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@VideoCreativeWork,sourceCollection@VideoPlaylist>"
+    },
+    {
+      "name": "AMAZON.ChooseAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.CloseAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.CloseAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.CreateAction<object@MusicPlaylist,content@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.CreateAction<object@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.DeactivateAction<object@PlaybackMode>"
+    },
+    {
+      "name": "AMAZON.DeleteAction<object@MusicCreativeWork,sourceCollection@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.DeleteAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.DeleteAction<object@MusicPlaylist,sourceCollection@Catalog>"
+    },
+    {
+      "name": "AMAZON.DeleteAction<object@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.DislikeAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.ExitAction<object@VideoPlaylist>"
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.LikeAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.LoopOffIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.LoopOnIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.MoreIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NavigateHomeIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NavigateSettingsIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.NextIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.PageDownIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.PageUpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.PauseIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.PlaybackAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.PlaybackAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.PlaybackAction<object@MusicPlaylist>"
+    },
+    {
+      "name": "AMAZON.PlaybackAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.PreviousIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.RateAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.RepeatAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.RepeatIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.RestartAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.RestartAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.ResumeAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.ResumeAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.ResumeAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.ResumeIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ScrollDownIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ScrollLeftIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ScrollRightIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ScrollUpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.SearchAction<object@CreativeWork>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@CreativeWork[name]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@CreativeWorkSection[name]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@MusicCreativeWork[byArtist]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@MusicPlaylist[tracks]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork,sourceCollection@VideoPlaylist>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[actor]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[audience]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[contentRating]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[dateReleased]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[description]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[director]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[genre]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[musicBy]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@VideoCreativeWork[name]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@WeatherForecast>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@WeatherForecast[temperature]>"
+    },
+    {
+      "name": "AMAZON.SearchAction<object@WeatherForecast[weatherCondition]>"
+    },
+    {
+      "name": "AMAZON.ShuffleOffIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.ShuffleOnIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StartAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.StartAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.StartOverIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.StopAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.SuspendAction<object@CreativeWorkSection>"
+    },
+    {
+      "name": "AMAZON.SuspendAction<object@MusicCreativeWork>"
+    },
+    {
+      "name": "AMAZON.SuspendAction<object@VideoCreativeWork>"
+    },
+    {
+      "name": "AMAZON.WatchAction<object@VideoCreativeWork>"
+    }
+  ],
+  "types": [
+    {
+      "name": "websitelist",
+      "values": [
+        {
+          "id": "WEB_SEARCH",
+          "name": {
+            "value": "google.com",
+            "synonyms": [
+              "look up",
+              "search for",
+              "google",
+              "look for"
+            ]
+          }
+        },
+        {
+          "id": "VIDEO",
+          "name": {
+            "value": "youtube.com",
+            "synonyms": [
+              "video"
+            ]
+          }
+        },
+        {
+          "id": "Music",
+          "name": {
+            "value": "https://music.amazon.com",
+            "synonyms": [
+              "Music"
+            ]
+          }
+        },
+        {
+          "id": "AMAZON",
+          "name": {
+            "value": "amazon.com",
+            "synonyms": [
+              "shopping",
+              "amazon"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "prompts": [
+    {
+      "id": "Elicit.Intent-accesswebsite.IntentSlot-webstielist",
+      "promptVersion": "1.0",
+      "definitionVersion": "1.0",
+      "variations": [
+        {
+          "type": "PlainText",
+          "value": "open {webstielist}"
+        }
+      ]
+    }
+  ],
+  "dialog": {
+    "version": "1.0",
+    "intents": [
+      {
+        "name": "accesswebsite",
+        "confirmationRequired": false,
+        "prompts": {},
+        "slots": [
+          {
+            "name": "webstielist",
+            "type": "websitelist",
+            "elicitationRequired": true,
+            "confirmationRequired": false,
+            "prompts": {
+              "elicit": "Elicit.Intent-accesswebsite.IntentSlot-webstielist"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
